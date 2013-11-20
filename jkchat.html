@@ -1,0 +1,41 @@
+<head>
+  <title>
+  JKchat
+  </title>
+  <h1>JKchat</h1>
+  <p>Chat or Leave me a message.</p>
+</head>
+
+<body>
+  {{loginButtons}}
+  	
+
+  {{> entryfield}}
+
+  {{> messages}}
+</body>
+
+<template name="entryfield">
+    <div class="row">
+    	<div class="large-12 columns">
+    		<input type="text" id="name" placeholder="Name" />
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="large-12 columns">
+    		<input type="text" id="message" placeholder="Your Message" />
+		</div>
+	</div>
+</template>
+
+<template name="messages">
+    <div class="panel">
+    	<p class="panel-font-color">
+	        {{#each messages}}
+	            <strong>{{name}}:
+	            </strong> {{message}} 
+	            <br>
+	        {{/each}}
+    	</p>
+	</div>
+</template>

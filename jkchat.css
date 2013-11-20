@@ -1,0 +1,20 @@
+/* CSS declarations go here */
+p{
+	color: white;
+}
+
+body{
+	background-color: black;
+}
+
+h1{
+	color: #0276FD;
+}
+
+.panel{
+	background-color: gray;
+}
+
+.panel-font-color{
+	color: #800080 !important;
+}
